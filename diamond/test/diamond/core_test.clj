@@ -1,6 +1,6 @@
-(ns tddattepmt.core-test
+(ns diamond.core-test
   (:require [clojure.test :refer :all]
-            [tddattepmt.core :refer :all]))
+            [diamond.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
