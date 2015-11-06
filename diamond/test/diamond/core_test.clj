@@ -10,5 +10,7 @@
 (deftest char-indexing
 	(testing "A"
 		(is (= 0 (char-index "A"))))
+	(testing "B"
+		(is (= 1 (char-index "B"))))
 	
 	)
