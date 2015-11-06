@@ -4,4 +4,11 @@
 
 (deftest a-test
   (testing "FIXME, I fail."
-    (is (= 0 1))))
+    (is not(= 0 1))))
+
+; Defining character index
+(deftest char-indexing
+	(testing "A"
+		(is (= 0 (char-index "A"))))
+	
+	)

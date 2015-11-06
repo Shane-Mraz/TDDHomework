@@ -1,6 +1,7 @@
 (ns diamond.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(require '[clojure.string :as string])
+
+(defn char-index [letter] (- (int (first (char-array letter))) 65))
+
+;(defn print-diamond [letter] (doall (map println (diamond letter))))
