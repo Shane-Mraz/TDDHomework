@@ -9,6 +9,14 @@
 (deftest position-of-z
   (is (= 26 (position-of \z))))
 
+;(deftest no-dashes
+; (is (= () (dashes 0))))
+
+;(defttest one-dash
+;  (is (= (seq "-") (dashes 1))))
+
+;(deftest five-dahses
+;  (is (= (seq "-----") (dashes 5))))
 
 
 
