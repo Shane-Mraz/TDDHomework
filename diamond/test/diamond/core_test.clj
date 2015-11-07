@@ -2,23 +2,31 @@
   (:require [clojure.test :refer :all]
             [diamond.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is not(= 0 1))))
+; Defining letter position
+(deftest position-of-a
+  (is (= 1 (position-of \a))))
+
+(deftest position-of-z
+  (is (= 26 (position-of \z))))
+
+
+
+
 
 ; Defining character index
-(deftest char-indexing
-	(testing "A"
-		(is (= 0 (char-index "A"))))
-	(testing "B"
-		(is (= 1 (char-index "B"))))
-	(testing "Z"
-		(is (= 25 (char-index "Z"))))
-	)
+;(deftest char-indexing
+;	(testing "a"
+;		(is (= 1 (char-index "a"))))
+;	(testing "b"
+;		(is (= 2 (char-index "b"))))
+;	(testing "z"
+;		(is (= 26 (char-index "z"))))
+;	)
+
 ;Test for the inner portion of the diamond
-(deftest inner-part-building
-	(testing "A"
-		(is (= "A" (inner-part "A"))))
-	(testing "B"
-		(is (= "B-B" (inner-part "B"))))
-	)
+;(deftest inner-part-building
+;	(testing "a"
+;		(is (= "a" (inner-part "a"))))
+;	(testing "b"
+;		(is (= "b-b" (inner-part "b"))))
+;	)
