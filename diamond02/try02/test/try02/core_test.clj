@@ -3,28 +3,28 @@
             [try02.core :refer :all]))
 
 (deftest char-indexing
-  (testing "A"
-    (is (= 0 (char-index "A"))))
-  (testing "B"
-    (is (= 1 (char-index "B"))))
-  (testing "C"
-    (is (= 2 (char-index "C")))))
+  (testing "a"
+    (is (= 0 (char-index "a"))))
+  (testing "b"
+    (is (= 1 (char-index "b"))))
+  (testing "c"
+    (is (= 2 (char-index "c")))))
 
 (deftest inner-part-building
-  (testing "A"
-    (is (= "A" (inner-part "A"))))
-  (testing "B"
-    (is (= "B-B" (inner-part "B")))))
+  (testing "a"
+    (is (= "a" (inner-part "a"))))
+  (testing "b"
+    (is (= "b-b" (inner-part "b")))))
 
 (deftest outer-part-building
-  (testing "A for A diamond"
-    (is (= "" (outer-part "A" "A"))))
-  (testing "A for B diamond"
-  	(is (= "-" (outer-part "A" "B")))))
+  (testing "a for a diamond"
+    (is (= "" (outer-part "a" "a"))))
+  (testing "a for b diamond"
+  	(is (= "-" (outer-part "a" "b")))))
 
-(deftest line-building
-  (testing "A for A diamond"
-    (is (= "A" (line-for "A" "A"))))
-  (testing "A for B diamond"
-    (is (= "-A-" (line-for "A" "B"))))
-  )
+;(deftest line-building
+;  (testing "a for a diamond"
+;    (is (= "a" (line-for "a" "a"))))
+;  (testing "a for b diamond"
+;   (is (= "-a-" (line-for "a" "b"))))
+;  )

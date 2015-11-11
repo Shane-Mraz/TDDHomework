@@ -2,7 +2,7 @@
 
 (require '[clojure.string :as string])
 
-(defn char-index [letter] (- (int (first (char-array letter))) 65))
+(defn char-index [letter] (- (int (first (char-array letter))) 97))
 
 (defn inner-part [letter]
   (let [index (char-index letter)]
