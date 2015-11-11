@@ -13,3 +13,9 @@
   (let [current-index (char-index current-letter)
         final-index (char-index diamond-letter)]
     (string/join "" (repeat (- final-index current-index) "-"))))
+
+(defn line-for [current-letter diamond-letter]
+  (let [outer (outer-part current-letter diamond-letter)
+        inner (inner-part current-letter)]
+    (str outer inner outer)))
+

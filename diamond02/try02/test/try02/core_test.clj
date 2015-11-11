@@ -22,3 +22,9 @@
   (testing "A for B diamond"
   	(is (= "-" (outer-part "A" "B")))))
 
+(deftest line-building
+  (testing "A for A diamond"
+    (is (= "A" (line-for "A" "A"))))
+  (testing "A for B diamond"
+    (is (= "-A-" (line-for "A" "B"))))
+  )
